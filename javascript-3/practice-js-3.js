@@ -2,21 +2,27 @@
 /* Create an array called 'groceries' that contains three grocery items of your choice as strings. */
 
 //CODE HERE
+let groceries = ['apples', 'ham', 'cookies']
 
 //////////////////STEP 2////////////////////
 /* Create a variable called 'yourName' that is assigned the value of your name as a string. */
 
 //CODE HERE
+let yourName = 'Nick'
 
 //////////////////STEP 3////////////////////
 /*
     Create a function called 'setGroceryListTitle' that takes in one parameter called 'x'. 
-    The function should return a string of 'XPARAM's Grocery List'.
+    The function should return a string of 'XPARAM's '.
     For example: if the string 'Joseph' is passed in for the variable x 
     the function would return 'Joseph's Grocery List'.
 */
 
 //CODE HERE
+function setGroceryListTitle(x) {
+    let fullList = x
+    return `${fullList}'s Grocery List`
+}
 
 //////////////////STEP 4////////////////////
 /* 
@@ -27,6 +33,11 @@
 */
 
 //CODE HERE
+function addItem(item) {
+    groceries.push(item)
+    displayData()  
+}
+
 
 //////////////////STEP 5////////////////////
 /*
@@ -37,6 +48,9 @@
 */
 
 //CODE HERE
+function removeItem(index) {
+    groceries.splice(index,1)
+}
 
 //////////////////STEP 6////////////////////
 /*
@@ -50,7 +64,18 @@
 */
 
 //CODE HERE
-
+function checkGroceryCount() {
+let cartSize = groceries.length
+console.log(cartSize)
+    if(cartSize > 5) {
+        return "That looks like a big trip";
+    } else if (cartSize === 1) {
+        return "1 item";
+    } else if (cartSize < 6 && cartSize > 0){
+        let totalSize = `${cartSize} items`
+        return totalSize
+    }
+}
 
 //////////////////Check out your code!////////////////////
 /*

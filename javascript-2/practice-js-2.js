@@ -10,6 +10,7 @@
 */
 
 //CODE HERE
+var gitDefinition = 'Version control to keep track of coding updates on your local computer'
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,6 +19,7 @@
 */
 
 //CODE HERE
+var gitHubDefinition = 'Hosted Version control to backup, keep track of versions and allow teams to merge code together into a project'
 
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
@@ -34,6 +36,10 @@
 */
 
 //CODE HERE
+let init = {
+    description : 'Creates a new repo.',
+    code : 'git init',
+}
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -42,6 +48,10 @@
 */
 
 //CODE HERE
+let clone = {
+    description : 'Copies down a SRC location of code',
+    code : 'git clone',
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -50,6 +60,10 @@
 */
 
 //CODE HERE
+let status = {
+    description : 'Gives you a status of modified, added or removed files',
+    code : 'git status',
+}
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -58,6 +72,10 @@
 */
 
 //CODE HERE
+let add = {
+    description : 'Adds and changes the work you have modified in staging',
+    code : 'git add .',
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -66,6 +84,10 @@
 */
 
 //CODE HERE
+let commit = {
+    description : 'Commits your work locally with notes',
+    code : 'git commit -m "note"',
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -74,6 +96,10 @@
 */
 
 //CODE HERE
+let addRemote = {
+    description : 'Add a new remote repo',
+    code : 'git remote add origin',
+}
 
 //////////////////PROBLEM 9////////////////////
 /*
@@ -82,3 +108,7 @@
 */
 
 //CODE HERE
+let push = {
+    description : 'Push up all that hard work to your repo',
+    code : 'git push',
+}
